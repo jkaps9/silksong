@@ -2,7 +2,14 @@
   <div class="container">
     <h2 class="section-title">Enemies</h2>
     <div class="enemies__cards">
+      {% set location = "" %}
       {% for enemy in enemies %}
+        {% if enemy.location !== location %}
+          {% set location = enemy.primaryLocation %}
+          <div class="card card--location">
+            <h3 class="location-title">{{ enemy.primaryLocation }}</h3>
+          </div>
+        {% endif %}
         <div class="card card--enemy">
           <a
             href="https://hollowknight.wiki{{ enemy.href }}"
@@ -12,7 +19,7 @@
             src="https:{{ enemy.imgSrc }}"
             alt="{{ enemy.title }}"
           />
-          <h3>{{ enemy.title }}</h3>
+          <h3 class="enemy-title">{{ enemy.title }}</h3>
           <p>
             <strong>Location:</strong>
             <span class="location-name">{{ enemy.primaryLocation }}</span>
