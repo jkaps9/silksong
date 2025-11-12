@@ -1,0 +1,18 @@
+<section class="enemies">
+  <div class="container">
+    <h2>Enemies</h2>
+    {% for enemy in enemies %}
+      <div class="card card--enemy">
+        <img
+          src="https:{{ enemy.imgSrc }}"
+          alt="{{ enemy.title }}"
+        />
+        <h3>{{ enemy.title }}</h3>
+        <p>
+          <strong>Primary Location:</strong>
+          {{ enemy.primaryLocation }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
