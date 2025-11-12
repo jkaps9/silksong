@@ -53,8 +53,7 @@ export default function (config) {
   });
 
   return {
-    pathPrefix:
-      process.env.NODE_ENV === "production" ? "/eleventy-template/" : "/",
+    pathPrefix: process.env.NODE_ENV === "production" ? "/silksong/" : "/",
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
