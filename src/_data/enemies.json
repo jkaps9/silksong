@@ -12,19 +12,19 @@
     "title": "Massive Mossgrub",
     "imgSrc": "//cdn.wikimg.net/en/hkwiki/images/thumb/6/60/HJ_Massive_Mossgrub.png/53px-HJ_Massive_Mossgrub.png",
     "href": "/w/Massive_Mossgrub",
-    "primaryLocation": "data needed",
-    "otherLocations": ["data needed"],
-    "health": -1,
+    "primaryLocation": "Memorium",
+    "otherLocations": [],
+    "health": 80,
     "blackThreadHealth": -1
   },
   {
     "title": "Mossmir",
     "imgSrc": "//cdn.wikimg.net/en/hkwiki/images/thumb/a/a6/HJ_Mossmir.png/53px-HJ_Mossmir.png",
     "href": "/w/Mossmir",
-    "primaryLocation": "data needed",
-    "otherLocations": ["data needed"],
-    "health": -1,
-    "blackThreadHealth": -1
+    "primaryLocation": "Moss Grotto",
+    "otherLocations": ["Memorium", "Weavenest Atla"],
+    "health": 12,
+    "blackThreadHealth": 24
   },
   {
     "title": "Moss Mother",

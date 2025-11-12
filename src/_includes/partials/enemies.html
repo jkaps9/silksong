@@ -1,18 +1,24 @@
 <section class="enemies">
   <div class="container">
-    <h2>Enemies</h2>
-    {% for enemy in enemies %}
-      <div class="card card--enemy">
-        <img
-          src="https:{{ enemy.imgSrc }}"
-          alt="{{ enemy.title }}"
-        />
-        <h3>{{ enemy.title }}</h3>
-        <p>
-          <strong>Primary Location:</strong>
-          {{ enemy.primaryLocation }}
-        </p>
-      </div>
-    {% endfor %}
+    <h2 class="section-title">Enemies</h2>
+    <div class="enemies__cards">
+      {% for enemy in enemies %}
+        <div class="card card--enemy">
+          <a
+            href="https://hollowknight.wiki{{ enemy.href }}"
+            class="enemy-link"
+          ></a>
+          <img
+            src="https:{{ enemy.imgSrc }}"
+            alt="{{ enemy.title }}"
+          />
+          <h3>{{ enemy.title }}</h3>
+          <p>
+            <strong>Location:</strong>
+            <span class="location-name">{{ enemy.primaryLocation }}</span>
+          </p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
