@@ -223,13 +223,12 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-}
-
-.card--enemy {
   --text-secondary: #a3a3a3;
   background: #1a1a1a;
   color: #fafafa;
+}
 
+.card--enemy {
   position: relative;
   .enemy-link {
     position: absolute;
@@ -243,10 +242,8 @@ footer {
 }
 
 .card--location {
-  background: #fafafa;
-  h3 {
-    color: #1a1a1a;
-  }
+  min-height: 0;
+  grid-column: 1 / -1;
 }
 
 @media (min-width: 48rem) {
