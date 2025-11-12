@@ -34,8 +34,8 @@
     "title": "Moss Mother",
     "imgSrc": "//cdn.wikimg.net/en/hkwiki/images/thumb/f/fe/HJ_Moss_Mother.png/53px-HJ_Moss_Mother.png",
     "href": "/w/Moss_Mother",
-    "primaryLocation": "data_needed",
-    "otherLocations": ["data_needed"],
+    "primaryLocation": "Moss Grotto",
+    "otherLocations": [],
     "health": -1,
     "blackThreadHealth": -1
   },
@@ -44,8 +44,8 @@
     "title": "Aknid",
     "imgSrc": "//cdn.wikimg.net/en/hkwiki/images/thumb/3/36/HJ_Aknid.png/53px-HJ_Aknid.png",
     "href": "/w/Aknid",
-    "primaryLocation": "data_needed",
-    "otherLocations": ["data_needed"],
+    "primaryLocation": "Mosshome",
+    "otherLocations": ["Bone Bottom", "Shellwood"],
     "health": -1,
     "blackThreadHealth": -1
   },
