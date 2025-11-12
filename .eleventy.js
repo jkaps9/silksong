@@ -48,8 +48,15 @@ export default function (config) {
   });
 
   // Add collections
-  config.addCollection("posts", function (collection) {
-    return collection.getFilteredByGlob("src/posts/**/*.md");
+  config.addCollection("enemies", function (collection) {
+    const locations = ["Moss Grotto", "Memorium", "data_needed"];
+    const enemies = collection.getAll()[0]?.data?.enemies || [];
+    return enemies.sort((a, b) => {
+      return (
+        locations.indexOf(a.primaryLocation) -
+        locations.indexOf(b.primaryLocation)
+      );
+    });
   });
 
   return {

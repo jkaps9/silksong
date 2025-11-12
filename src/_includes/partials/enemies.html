@@ -3,8 +3,8 @@
     <h2 class="section-title">Enemies</h2>
     <div class="enemies__cards">
       {% set location = "" %}
-      {% for enemy in enemies %}
-        {% if enemy.location !== location %}
+      {% for enemy in collections.enemies %}
+        {% if enemy.primaryLocation !== location %}
           {% set location = enemy.primaryLocation %}
           <div class="card card--location">
             <h3 class="location-title">{{ enemy.primaryLocation }}</h3>
